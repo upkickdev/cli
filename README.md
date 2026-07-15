@@ -68,3 +68,12 @@ Open-source templates live separately under the [upkickdev](https://github.com/u
 ## License
 
 MIT
+
+## Development
+
+Install dependencies and run the project locally:
+
+```bash
+pnpm install
+pnpm build
+```
