@@ -1,0 +1,84 @@
+name: Feature request
+description: Suggest an improvement for Upkick.
+title: "[Feature]: "
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the user problem first. A clear problem statement helps us evaluate the smallest useful solution.
+
+  - type: checkboxes
+    id: existing
+    attributes:
+      label: Existing issue check
+      options:
+        - label: I searched the existing issues and did not find the same request.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve, and who experiences it?
+      placeholder: "When I ..., I cannot ..., which causes ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Explain the behavior you would like Upkick to provide.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - create
+        - add or generate
+        - inspect or doctor
+        - auth or project linking
+        - templates
+        - developer experience
+        - documentation
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example usage
+      description: Show a possible command or workflow.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I may be willing to implement this after the approach is approved.
+          required: false
+
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true
